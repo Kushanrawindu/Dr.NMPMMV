@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-import {NavLink, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
+// import '../style/header.css'
 
 
 class header extends Component {
     render() {
         return (
             <div classNameName="page">
-               <header id="header" role="header" className="solid-bg-header clear">
+               <section id="header" role="header" className="solid-bg-header clear">
                     <div classNameName="header-v1">
                         {/* Start Header Top */}
                         <div classNameName="header-top clear">
@@ -14,17 +15,17 @@ class header extends Component {
                                 <div className="row">
                                     <div className="header-top-left">
                                         <div className="school-tag">
-                                            <a href="index.php">
+                                            <Link to="index.php">
                                                 {/* <h2>ඇන්.ඇම්.පෙරේරා මධ්‍ය මහා විද්‍යාලය</h2> */}
                                                 <h2>N.M. Perera Central College</h2>
                                                 <h4>Dehiowita Zone, Yatiyanthota</h4>
-                                            </a>
+                                            </Link>
                                         </div>              
                                     </div>
                                     <div className="header-top-right">           
                                         <div className="aditional-nav">
-                                            <a href="register.html" className="btn-border"><span><i className="fa fa-user"></i>Register</span></a>
-                                            <a href="login.html" className="btn-border"><span><i className="fa fa-sign-in"></i>Login</span></a>
+                                            <Link to="register.html" className="btn-border"><span><i className="fa fa-user"></i>Register</span></Link>
+                                            <Link to="login.html" className="btn-border"><span><i className="fa fa-sign-in"></i>Login</span></Link>
                                         </div>
                                     </div>
                                 </div>
@@ -40,67 +41,67 @@ class header extends Component {
                                     <div className="menu-wrap">
                                         <nav class="primary-menu">
                                             <ul>
-                                                <li><a href="index.html">Home</a></li>
+                                                <li><Link to="index.html">Home</Link></li>
                                                 <li className="mega-dropdown current">
-                                                    <a href="#">About Our School <span class="indicator"><i class="fa fa-angle-down"></i></span></a>
+                                                    <Link to="#">About Our School <span class="indicator"><i class="fa fa-angle-down"></i></span></Link>
                                                     <div class="sl-mega-full">
                                                         <div class="container">
                                                             <div class="sl-mega-section-wrap">
                                                                 <div class="mega-menu-column-4">
-                                                                <a href="#" class="mega-menu-section-title">History And Traditions</a>
+                                                                <Link to="#" class="mega-menu-section-title">History And Traditions</Link>
                                                                 <ul class="sub-menu">
-                                                                    <li><a href="#">A Brief History</a></li>
-                                                                    <li><a href="founders.php">Founders</a></li>
-                                                                    <li><a href="#">Past Principals</a></li>
+                                                                    <li><Link to="#">A Brief History</Link></li>
+                                                                    <li><Link to="founders.php">Founders</Link></li>
+                                                                    <li><Link to="#">Past Principals</Link></li>
                                                                 </ul>
                                                                 </div>
                                                                 <div class="mega-menu-column-4">
-                                                                <a href="#" class="mega-menu-section-title">Identity</a>
+                                                                <Link to="#" class="mega-menu-section-title">Identity</Link>
                                                                 <ul class="sub-menu">
-                                                                    <li><a href="school-profile.php">School Profile</a></li>
-                                                                    <li><a href="#">Crest & Moto</a></li>
-                                                                    <li><a href="#">School Flag</a></li>
-                                                                    <li><a href="#">School Colours</a></li>
-                                                                    <li><a href="#">School Song</a></li>
-                                                                    <li><a href="#">House System</a></li>
-                                                                    <li><a href="#">Uniform</a></li>
+                                                                    <li><Link to={'/profile'}>School Profile</Link></li>
+                                                                    <li><Link to="#">Crest & Moto</Link></li>
+                                                                    <li><Link to="#">School FlLinkg</Link></li>
+                                                                    <li><Link to="#">School Colours</Link></li>
+                                                                    <li><Link to="#">School Song</Link></li>
+                                                                    <li><Link to="#">House System</Link></li>
+                                                                    <li><Link to="#">Uniform</Link></li>
                                                                 </ul>
                                                                 </div>
                                                                 <div class="mega-menu-column-4">
-                                                                    <a href="#" class="mega-menu-section-title">Administration</a>
+                                                                    <Link to="#" class="mega-menu-section-title">Administration</Link>
                                                                     <ul class="sub-menu">
-                                                                        <li><a href="#">Management Structure</a></li>
-                                                                        <li><a href="#">Management Committee</a></li>
-                                                                        <li><a href="profiles.php">Profiles</a></li>
+                                                                        <li><Link to="#">Management Structure</Link></li>
+                                                                        <li><Link to="#">Management Committee</Link></li>
+                                                                        <li><Link to="profiles.php">Profiles</Link></li>
                                                                     </ul>
 
-                                                                    <a href="#" class="mega-menu-section-title no-border">Rules and Regulations</a>
-                                                                    <a href="#" class="mega-menu-section-title no-border">School Facilities</a>
+                                                                    <Link to="#" class="mega-menu-section-title no-border">Rules and Regulations</Link>
+                                                                    <Link to="#" class="mega-menu-section-title no-border">School Facilities</Link>
                                                                 </div>
                                                                 <div class="mega-menu-column-4">
                                                                     <h4 class="mega-menu-section-title">Profiles</h4>
                                                                     <div class="mega-menu-section-content">
-                                                                        <a href="#" class="profile-block">
+                                                                        <Link to="#" class="profile-block">
                                                                             {/* <img src="images/principal-thumb.jpg"> */}
                                                                             <div class="des">
                                                                                 <h3>U.G. Kamal Maduranga</h3>
                                                                                 <h4>The Principal</h4>
                                                                             </div>
-                                                                        </a>
-                                                                        <a href="#" class="profile-block">
+                                                                        </Link>
+                                                                        <Link to="#" class="profile-block">
                                                                             {/* <img src="images/principal-thum2.jpg"> */}
                                                                             <div class="des">
                                                                                 <h3>S.M. Prasad Ariyarathna</h3>
                                                                                 <h4>The Deputy Principal</h4>
                                                                             </div>
-                                                                        </a>
-                                                                        <a href="#" class="profile-block">
+                                                                        </Link>
+                                                                        <Link to="#" class="profile-block">
                                                                             {/* <img src="images/principal-thum1.jpg"> */}
                                                                             <div class="des">
                                                                                 <h3>T.G. Niroshan Premarathna</h3>
                                                                                 <h4>The Principal</h4>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -108,63 +109,63 @@ class header extends Component {
                                                     </div>
                                                 </li>
                                                 <li class="mega-dropdown">
-                                                    <a href="#">Academic <span class="indicator"><i class="fa fa-angle-down"></i></span></a>
+                                                    <Link to="#">Academic <span class="indicator"><i class="fa fa-angle-down"></i></span></Link>
                                                     <div class="sl-mega-full">
                                                         <div class="container">
                                                             <div class="sl-mega-section-wrap">
                                                                 <div class="mega-menu-column-4">
-                                                                    <a href="#" class="mega-menu-section-title">Curriculum</a>
+                                                                    <Link to="#" class="mega-menu-section-title">Curriculum</Link>
                                                                     <ul class="sub-menu">
-                                                                        <li><a href="#">Primary School</a></li>
-                                                                        <li><a href="#">Middle School</a></li>
-                                                                        <li><a href="#">Upper School</a></li>
+                                                                        <li><Link to="#">Primary School</Link></li>
+                                                                        <li><Link to="#">Middle School</Link></li>
+                                                                        <li><Link to="#">Upper School</Link></li>
                                                                     </ul>
                                                                 </div>
                                                                 <div class="mega-menu-column-4">
-                                                                    <a href="#" class="mega-menu-section-title">Academic Staff</a>
+                                                                    <Link to="#" class="mega-menu-section-title">Academic Staff</Link>
                                                                     <ul class="sub-menu">
-                                                                        <li><a href="profiles.php">Profiles</a></li>
-                                                                        <li><a href="academic-staff.php">Tutorial Staff</a></li>
-                                                                        <li><a href="#">Non Academic Staff</a></li>
-                                                                        <li><a href="#">Prefects Board</a></li>
+                                                                        <li><Link to="profiles.php">Profiles</Link></li>
+                                                                        <li><Link to="academic-staff.php">Tutorial Staff</Link></li>
+                                                                        <li><Link to="#">Non Academic Staff</Link></li>
+                                                                        <li><Link to="#">Prefects Board</Link></li>
                                                                     </ul>
                                                                 </div>
                                                                 <div class="mega-menu-column-4">
-                                                                    <a href="#" class="mega-menu-section-title">Student Performance</a>
+                                                                    <Link to="#" class="mega-menu-section-title">Student Performance</Link>
                                                                     <ul class="sub-menu">
-                                                                        <li><a href="student-performance.php">Results Summary 2014</a></li>
-                                                                        <li><a href="#">Results Summary 2015</a></li>
-                                                                        <li><a href="#">Results Summary 2016</a></li>
-                                                                        <li><a href="#">Results Summary 2017</a></li>
-                                                                        <li><a href="#">Results Summary 2018</a></li>
+                                                                        <li><Link to="student-performance.php">Results Summary 2014</Link></li>
+                                                                        <li><Link to="#">Results Summary 2015</Link></li>
+                                                                        <li><Link to="#">Results Summary 2016</Link></li>
+                                                                        <li><Link to="#">Results Summary 2017</Link></li>
+                                                                        <li><Link to="#">Results Summary 2018</Link></li>
                                                                     </ul>
-                                                                    <a href="#" class="mega-menu-section-title no-border">Clubs & Associations</a>
-                                                                    <a href="#" class="mega-menu-section-title no-border">Admissions</a>
+                                                                    <Link to="#" class="mega-menu-section-title no-border">Clubs & Associations</Link>
+                                                                    <Link to="#" class="mega-menu-section-title no-border">Admissions</Link>
                                                                 </div>
                                                                 <div class="mega-menu-column-4">
                                                                     <h4 class="mega-menu-section-title">Profiles</h4>
                                                                     <div class="mega-menu-section-content">
-                                                                        <a href="#" class="profile-block">
+                                                                        <Link to="#" class="profile-block">
                                                                             {/* <img src="images/principal-thumb.jpg"> */}
                                                                             <div class="des">
                                                                                 <h3>U.G. Kamal Maduranga</h3>
                                                                                 <h4>The Principal</h4>
                                                                             </div>
-                                                                        </a>
-                                                                        <a href="#" class="profile-block">
+                                                                        </Link>
+                                                                        <Link to="#" class="profile-block">
                                                                             {/* <img src="images/principal-thum2.jpg"> */}
                                                                             <div class="des">
                                                                                 <h3>S.M. Prasad Ariyarathna</h3>
                                                                                 <h4>The Deputy Principal</h4>
                                                                             </div>
-                                                                        </a>
-                                                                        <a href="#" class="profile-block">
+                                                                        </Link>
+                                                                        <Link to="#" class="profile-block">
                                                                             {/* <img src="images/principal-thum1.jpg"> */}
                                                                             <div class="des">
                                                                                 <h3>T.G. Niroshan Premarathna</h3>
                                                                                 <h4>The Principal</h4>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -172,22 +173,22 @@ class header extends Component {
                                                     </div>
                                                 </li>
                                                 <li>
-                                                    <a href="#">Achievements</a>
+                                                    <Link to="#">Achievements</Link>
                                                 </li>
                                                 <li class="menu-logo">
                                                     <div class="menu-logo-inner">
-                                                        <a href="#"><img src="images/logo/school-logo.png" alt="" /></a>
+                                                        <Link to="#"><img src="images/logo/school-logo.png" alt="" /></Link>
                                                     </div>
                                                 </li>
-                                                <li><a href="#">Gallery <span class="indicator"><i class="fa fa-angle-down"></i></span></a>
+                                                <li><Link to="#">Gallery <span class="indicator"><i class="fa fa-angle-down"></i></span></Link>
                                                     <ul class="sl-dropdown scale-effect">
-                                                        <li><a href="#">Photo Gallery</a></li>
-                                                        <li><a href="#">Video Gallery</a></li>
+                                                        <li><Link to="#">Photo Gallery</Link></li>
+                                                        <li><Link to="#">Video Gallery</Link></li>
                                                     </ul>
                                                 </li>
-                                                <li ><a href="news.php">News & Highlights</a></li>
-                                                <li><a href="#">Contact Us</a></li>
-                                                <li><a href="#">Alumni</a></li>
+                                                <li ><Link to="news.php">News & Highlights</Link></li>
+                                                <li><Link to="#">Contact Us</Link></li>
+                                                <li><Link to="#">Alumni</Link></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -201,36 +202,36 @@ class header extends Component {
                                         <div class='mobile-menu-area'>
                                             <nav id="mobile-menu">
                                                 <ul>
-                                                    <li class="current"><a href="#">Home</a></li>
-                                                    <li><a href="#">About Our School</a>
+                                                    <li class="current"><Link to="#">Home</Link></li>
+                                                    <li><Link to="#">About Our School</Link>
                                                         <ul>
-                                                            <li><a href="#">History and Traditions</a></li>
-                                                            <li><a href="#">Identity</a></li>
-                                                            <li><a href="#">Administration</a></li>
-                                                            <li><a href="#">Rules and Regulations </a></li>
-                                                            <li><a href="#">School Facilities</a></li>
+                                                            <li><Link to="#">History and Traditions</Link></li>
+                                                            <li><Link to="#">Identity</Link></li>
+                                                            <li><Link to="#">Administration</Link></li>
+                                                            <li><Link to="#">Rules and Regulations </Link></li>
+                                                            <li><Link to="#">School Facilities</Link></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="#">Academic</a>
+                                                    <li><Link to="#">Academic</Link>
                                                         <ul>
-                                                            <li><a href="#">Overview</a></li>
-                                                            <li><a href="#">Curriculum</a></li>
-                                                            <li><a href="#">Academic Staff</a></li>
-                                                            <li><a href="#">Student Performance</a></li>
-                                                            <li><a href="#">Clubs & Associations</a></li>
-                                                            <li><a href="#">Admissions</a></li>
+                                                            <li><Link to="#">Overview</Link></li>
+                                                            <li><Link to="#">Curriculum</Link></li>
+                                                            <li><Link to="#">Academic Staff</Link></li>
+                                                            <li><Link to="#">Student Performance</Link></li>
+                                                            <li><Link to="#">Clubs & Associations</Link></li>
+                                                            <li><Link to="#">Admissions</Link></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="#">Achievements</a></li>
-                                                    <li><a href="#">Gallery</a>
+                                                    <li><Link to="#">Achievements</Link></li>
+                                                    <li><Link to="#">Gallery</Link>
                                                     <ul>
-                                                        <li><a href="#">Photo Gallery</a></li>
-                                                        <li><a href="#">Video Gallery</a></li>
+                                                        <li><Link to="#">Photo Gallery</Link></li>
+                                                        <li><Link to="#">Video Gallery</Link></li>
                                                     </ul>
                                                     </li>
-                                                    <li><a href="#">News & Highlights</a></li>
-                                                    <li><a href="#">Contact Us</a></li>
-                                                    <li><a href="#">Alumni</a></li>
+                                                    <li><Link to="#">News & Highlights</Link></li>
+                                                    <li><Link to="#">Contact Us</Link></li>
+                                                    <li><Link to="#">Alumni</Link></li>
                                                 </ul>
                                             </nav>
                                         </div>
@@ -241,10 +242,10 @@ class header extends Component {
                         </div>
                         {/* End Header Bottom */}
                     </div>
-                </header>
+                </section>
                 <section class="section page-banner">
                     <div class="banner-img">
-                        <img className="bg-image" src='images/banner/history-bg.jpg'></img>
+                        <img className="bg-image" src={'images/banner/history-bg.jpg'}></img>
                     </div>    
                 </section>
             </div>

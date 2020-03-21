@@ -1,8 +1,8 @@
-/* @charset "UTF-8";
-    @import url(//fonts.googleapis.com/css?family=Open+Sans: 300italic, 400, 300, 600);
-    @import url(//fonts.googleapis.com/css?family=Nunito+Sans: 200, 300, 400, 600, 700, 900&display=swap);
-    @import url(//fonts.googleapis.com/css?family=Zilla+Slab: 300, 400, 500, 700&display=swap);
-    @import url(//fonts.googleapis.com/css?family=Jura: 300, 400, 500, 600, 700|Teko:300, 400, 500, 600, 700); */
+@charset "UTF-8";
+    @import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600);
+    @import url(//fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,900&display=swap);
+    @import url(//fonts.googleapis.com/css?family=Zilla+Slab:300,400,500,700&display=swap);
+    @import url(//fonts.googleapis.com/css?family=Jura:300,400,500,600,700|Teko:300,400,500,600,700);
     /*!
  * All Styles for:  www.sakaskadaya.com/school-web;
     
@@ -5293,8 +5293,8 @@ th.visible-print, td.visible-print {
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1,  CSS: MIT License)
  */@font-face {
     font-family: FontAwesome;
-    src: url(../fonts/fontawesome-webfont.eot?v=4.7.0);
-    src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(../fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'), url(../fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'), url(../fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'), url(../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
+    src: url(./js/fonts/fontawesome-webfont.eot?v=4.7.0);
+    src: url(./js/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(./js/fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'), url(../fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'), url(./js/fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'), url(./js/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
     font-weight: 400;
     font-style: normal;
 }
@@ -13398,8 +13398,8 @@ header[role=header] .header-v1 .sl-mega-full .sl-mega-section-wrap .mega-menu-se
     padding-right: 15px;
     padding-left: 6px!important;
 }
-/* @media (min-width:768px) {
-    .section-news-events .news-and-events .news-wrapper .news-block: nth-of-type(3n+1) {
+ @media (min-width:768px) {
+    .section-news-events .news-and-events .news-wrapper .news-block:nth-of-type(3n+1) {
     float: left;
     width: 50%}
 }.section-news-events .news-and-events .news-wrapper .news-block:nth-of-type(3n+2) {
@@ -13407,9 +13407,9 @@ header[role=header] .header-v1 .sl-mega-full .sl-mega-section-wrap .mega-menu-se
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-} */
-/* @media (min-width:768px) {
-    .section-news-events .news-and-events .news-wrapper .news-block: nth-of-type(3n+2) {
+} 
+ @media (min-width:768px) {
+    .section-news-events .news-and-events .news-wrapper .news-block :nth-of-type(3n+2) {
     float: left;
     width: 23.333333333333332%}
 }.section-news-events .news-and-events .news-wrapper .news-block:nth-of-type(3n+3) {
@@ -13418,9 +13418,9 @@ header[role=header] .header-v1 .sl-mega-full .sl-mega-section-wrap .mega-menu-se
     padding-left: 15px;
     padding-right: 15px;
     padding-right: 6px!important;
-} */
-/* @media (min-width:768px) {
-    .section-news-events .news-and-events .news-wrapper .news-block: nth-of-type(3n+3) {
+} 
+ @media (min-width:768px) {
+    .section-news-events .news-and-events .news-wrapper .news-block:nth-of-type(3n+3) {
     float: left;
     width: 26.666666666666668%}
 }.section-news-events .news-and-events .news-wrapper .news-block figure {
@@ -13464,7 +13464,7 @@ header[role=header] .header-v1 .sl-mega-full .sl-mega-section-wrap .mega-menu-se
     padding-left: 15px;
     padding-right: 15px;
     padding: 0 8px;
-} */
+} 
 @media (min-width:768px) {
     .section-news-events .launchpad {
     float: left;
@@ -14535,8 +14535,8 @@ header[role=header] .header-v1 .sl-mega-full .sl-mega-section-wrap .mega-menu-se
     margin-bottom: 20px;
 }
 }
-/* @media (min-width:768px) {
-    .page-sign-in-sign-up .main-wrapper .signup-block-holder .signup-block: first-child {
+ @media (min-width:768px) {
+    .page-sign-in-sign-up .main-wrapper .signup-block-holder .signup-block:first-child {
     margin-left: 12.5%}
 }.page-sign-in-sign-up .main-wrapper .signup-block-holder .signup-block .block-wrapper {
     background: #fbfbfb;
@@ -14607,7 +14607,7 @@ header[role=header] .header-v1 .sl-mega-full .sl-mega-section-wrap .mega-menu-se
     border-top: 1px solid #939393;
     position: absolute;
     bottom: 0;
-    width: 100%} */
+    width: 100%} 
 @media (max-width:767px) {
     .page-sign-in-sign-up footer[role=footer] {
     position: relative;
@@ -16278,8 +16278,8 @@ header[role=header] .header-v1 .sl-mega-full .sl-mega-section-wrap .mega-menu-se
     background: #d3d3d3;
     z-index: -1;
 }
-/* @media (min-width:768px) {
-    .post-content-wrapper .inner-content-wrapper .content-block .post-news-block .unit .unit-right: before {
+ @media (min-width:768px) {
+    .post-content-wrapper .inner-content-wrapper .content-block .post-news-block .unit .unit-right:before {
     height: calc(121%);
     left: 50px;
 }
@@ -16293,9 +16293,9 @@ header[role=header] .header-v1 .sl-mega-full .sl-mega-section-wrap .mega-menu-se
     background: #d3d3d3;
     z-index: -1;
     display: none;
-} */
-/* @media (min-width:768px) {
-    .post-content-wrapper .inner-content-wrapper .content-block .post-news-block .unit .unit-right: after {
+} 
+ @media (min-width:768px) {
+    .post-content-wrapper .inner-content-wrapper .content-block .post-news-block .unit .unit-right:after {
     display: block;
 }
 }.post-content-wrapper .inner-content-wrapper .content-block .post-news-block .unit .unit {
@@ -16541,7 +16541,7 @@ header[role=header] .header-v1 .sl-mega-full .sl-mega-section-wrap .mega-menu-se
     display: flex;
     flex-direction: column;
     padding-right: 0;
-} */
+} 
 @media (min-width:768px) {
     .section-profile .profile-sidebar {
     float: left;
@@ -16596,7 +16596,7 @@ header[role=header] .header-v1 .sl-mega-full .sl-mega-section-wrap .mega-menu-se
     flex-direction: column;
     padding-left: 0;
 }
-/* @media (min-width:768px) {
+ @media (min-width:768px) {
     .section-profile .profile-content-area {
     float: left;
     width: 75%}
@@ -16643,9 +16643,9 @@ header[role=header] .header-v1 .sl-mega-full .sl-mega-section-wrap .mega-menu-se
     background: url(../images/banner/siber-lowata-piyapath-banner-logo.png);
     background-repeat: no-repeat;
     height: 200px;
-    width: 100%} */
-/* @media (max-width:680px) {
-    .section-sponsor .container: before {
+    width: 100%} 
+ @media (max-width:680px) {
+    .section-sponsor .container:before {
     display: none;
 }
 }.section-sponsor>.container:after {
@@ -16657,9 +16657,9 @@ header[role=header] .header-v1 .sl-mega-full .sl-mega-section-wrap .mega-menu-se
     background-repeat: no-repeat;
     height: 220px;
     width: 600px;
-} */
-/* @media (max-width:767px) {
-    .section-sponsor>.container: after {
+} 
+ @media (max-width:767px) {
+    .section-sponsor>.container:after {
     right: -15%}
 }.section-sponsor .sticky-sidebar .sidebar-content-wrapper {
     background: #f9d28a;
@@ -16674,7 +16674,7 @@ header[role=header] .header-v1 .sl-mega-full .sl-mega-section-wrap .mega-menu-se
 .section-sponsor .sticky-sidebar .sidebar-content-wrapper h1 {
     margin: 0;
     padding: 20px 0;
-} */
+} 
 @media (max-width:767px) {
     .section-sponsor .sticky-sidebar .sidebar-content-wrapper {
     background: #0d6e9f;

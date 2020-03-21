@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+// import '../style/main.css';
 
 export default class profile extends Component {
     render() {
@@ -17,12 +18,12 @@ export default class profile extends Component {
     </div>
     <nav className="navbar" role="navigation">
       <div className="navbar-header">
-        <a id="menu-toggle" href="#" className="navbar-toggle">
+        <Link id="menu-toggle" href="#" className="navbar-toggle">
           <span className="sr-only">Toggle navigation</span>
           <span className="icon-bar"></span>
           <span className="icon-bar"></span>
           <span className="icon-bar"></span>
-        </a>
+        </Link>
         <div className="navbar-brand">About Our School</div>
       </div>
       <div id="sidebar-toggle-wrapper" className="sidebar-toggle">
@@ -31,12 +32,12 @@ export default class profile extends Component {
           <!-- <li className="title">School Identity</li> -->   */}
           <li><Link  className="active" to={'/profile'}><span className="dot"></span>School Profile</Link></li>
           <li><Link  to={'/vision'}><span className="dot"></span>Vision & Mission</Link></li>
-          <li><a  href="crest-and-moto.php"><span className="dot"></span>Crest & Moto</a></li>
-          <li><a  href="school-flag.php"><span className="dot"></span>School Flag</a></li>
-          <li><a  href="school-colours.php"><span className="dot"></span>School Colours</a></li>
-          <li><a  href="school-song.php"><span className="dot"></span>School Song</a></li>
-          <li><a  href="house-system.php"><span className="dot"></span>House System</a></li>
-          <li><a  href="uniforms.php"><span className="dot"></span>Uniform</a></li>
+          <li><Link  to="crest-and-moto.php"><span className="dot"></span>Crest & Moto</Link></li>
+          <li><Link  to="school-flag.php"><span className="dot"></span>School Flag</Link></li>
+          <li><Link  to="school-colours.php"><span className="dot"></span>School Colours</Link></li>
+          <li><Link  to="school-song.php"><span className="dot"></span>School Song</Link></li>
+          <li><Link  to="house-system.php"><span className="dot"></span>House System</Link></li>
+          <li><Link  to="uniforms.php"><span className="dot"></span>Uniform</Link></li>
         </ul>
       </div>
     </nav>            
@@ -44,20 +45,20 @@ export default class profile extends Component {
   <footer role="footer">
     <div className="get-social">
       <ul>
-        <li><a href=""><i className="fa fa-facebook"></i></a></li>
-        <li><a href=""><i className="fa fa-instagram"></i></a></li>
-        <li><a href=""><i className="fa fa-twitter"></i></a></li>
-        <li><a href=""><i className="fa fa-youtube"></i></a></li>
+        <li><Link to=""><i className="fa fa-facebook"></i></Link></li>
+        <li><Link to=""><i className="fa fa-instagram"></i></Link></li>
+        <li><Link to=""><i className="fa fa-twitter"></i></Link></li>
+        <li><Link to=""><i className="fa fa-youtube"></i></Link></li>
       </ul>
     </div>
     <div className="top-row">
-      <span><a href="#">Help Center</a> | <a href="#">About</a> | <a href="#">Privacy Policy</a></span>
-      <span><a href="#">Community Guidlines</a></span>
+      <span><Link to="#">Help Center</Link> | <Link to="#">About</Link> | <Link to="#">Privacy Policy</Link></span>
+      <span><Link to="#">Community Guidlines</Link></span>
     </div>
 
     <div className="bottom-row">
       <h3 className="icon">
-        Powered by: <a href="" title="Webcomms Global (PVT) Ltd.">Webcomms</a>
+        Powered by: <Link to="" title="Webcomms Global (PVT) Ltd.">Webcomms</Link>
         <span>Sakaskadaya Portal © 2019</span>
       </h3>
     </div>
@@ -71,8 +72,8 @@ export default class profile extends Component {
             
             <div className="post-content-wrapper">
                 <ol className="breadcrumb">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="#">About Our School</a></li>
+                    <li><Link to="index.php">Home</Link></li>
+                    <li><Link to="#">About Our School</Link></li>
                     <li className="active">Identity</li>
                 </ol>   
 

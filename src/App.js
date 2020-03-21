@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-// import './components/style/styles.css';
+import './App.css';
 import {HashRouter as Router, Route, Switch} from 'react-router-dom'
 
 //common component
